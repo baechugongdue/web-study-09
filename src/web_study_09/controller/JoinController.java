@@ -45,7 +45,7 @@ public class JoinController extends HttpServlet {
        }
     }
 
-    private Member getMember(HttpServletRequest request) {
+    public static Member getMember(HttpServletRequest request) {
         String name = request.getParameter("name");
         String userId = request.getParameter("userId");
         String pwd = request.getParameter("pwd");

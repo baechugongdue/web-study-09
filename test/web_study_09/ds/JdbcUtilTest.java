@@ -13,5 +13,4 @@ public class JdbcUtilTest {
         Assert.assertNotNull(con);
         System.out.println("con : " + con);
     }
-
 }

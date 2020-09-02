@@ -10,4 +10,8 @@ public class JoinService {
     public int insertMember(Member member) {
         return dao.insertMember(member);
     }
+    
+    public int updateMember(Member member) {
+        return dao.updateMember(member);
+    }
 }

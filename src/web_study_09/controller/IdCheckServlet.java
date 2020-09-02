@@ -17,10 +17,12 @@ public class IdCheckServlet extends HttpServlet {
 	private LoginService service = new LoginService();
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	    
 	    process(request, response);
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
 	    process(request, response);
 	}
 

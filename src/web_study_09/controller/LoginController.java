@@ -28,8 +28,11 @@ public class LoginController extends HttpServlet {
 
 	protected void process(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 	    String url = "member/login.jsp";
-	    
+	   
 	    if (request.getMethod().equalsIgnoreCase("get")) {
+	        HttpSession session = request.getSession();
+	        if (session.getAttribute("loginUser") != null)
+	            url = "main.jsp";
 	        request.getRequestDispatcher(url).forward(request, response);
 	    }else {
 	    
